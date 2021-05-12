@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+  <!--for 태그는 사용자가 입력한 값을 그대로 받아서 서버에 전송할때 사용합니다. -->
+  <form>
+    <h4>회원가입양식</h4>
+    아이디 : <input type ="text" size ="10" placeholder="8글자"></br>
+    비밀번호 : <input type ="password" size ="10"></br>
+    이메일 :<input type ="email"></br><!-- 이메일 형식을 갖도록 지원 -->
+    
+    <!-- name=속성으로 같은것으로 다 묶여있어야함 , 통일시켜야함 하나의그룹으로 묶어주어야함 -->
+    <!--checkbox, radio속성은 위의 규칙을 따라야합!! -->
+    관심분야 : 
+    <input type ="checkbox" name="inter"> java 
+    <input type ="checkbox" name="inter"> JSP
+    <input type ="checkbox" name="inter"> JS
+    <input type ="checkbox" name="inter"> CSS
+    <input type ="checkbox" name="inter"> DB
+    
+    
+    
+    전공 :
+    <input type ="radio" name="major"> 경영학
+    <input type ="radio" name="major"> 전산학
+    <input type ="radio" name ="major"> 수학
+    <input type ="radio" name ="major">컴퓨터 공학
+    <input type = "radio" name ="major">기계공학
+    </br>
+    
+    지역:
+    <select name ="region">
+    
+    <option>서울시</option>  
+    <option>경기도</option>
+    <option>인천시</option>
+    <option>부산시</option>
+    
+    </select>  
+    
+    자기소개:</br>
+    <textarea rows ="" cols=""> </textarea> 
+    <br/>
+    <input type ="submit" value="가입하기"> <!-- 폼태그에 입력하는것을 정하는곳으로보내는것 -->
+    <input type ="reset" value ="초기화">
+    <input type ="button" value ="목록">
+    
+    
+    
+    
+    
+  
+  </form>
+</body>
+</html>
